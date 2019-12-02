@@ -1,4 +1,3 @@
-
 #lessons,
 #steps,
 #info{
@@ -11,19 +10,26 @@
   background-color: #f9f9f9;
 }
 
+#info img{
+  height: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #00B7AB;
+}
+
 img {
-  max-width: 100%;
   max-height: 160px;
-  object-fit: contain;
-  text-align: center;
-  height: 200px;
+  max-width: 100%;
   margin: 15px;
+  text-align: center;
+  object-fit: contain;
 }
 
 h1{
   padding-top:0;
   padding-bottom: 20px;
 }
+
 h3{
   font-size: 20px;
   padding: 10px;
@@ -33,23 +39,21 @@ h3{
   padding: 10px;
 }
 
-#info img{
-  background-color: #00B7AB;
-  border-radius: 50%;
-  height: 100px;
-
-}
-
+/* Media Query */
 @media screen and (max-width: 768px){
+
   [class*="col-xs-"] p{
     font-size: 23px;
   }
+
   h3{
     font-size: 25px;
   }
+
   #info img{
     height: 70px;
   }
+
   .xs_height_70{
     height: 70px;
   }
@@ -57,9 +61,11 @@ h3{
 
 @media screen and (min-width: 768px)
 and (max-width: 992px){
+
   [class*="col-md-"] p{
     font-size: 20px;
   }
+
   #info img{
     height: 100px;
   }
@@ -67,7 +73,15 @@ and (max-width: 992px){
   .container{
     background-color: lightyellow;
   }
+
   h3{
     font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 992px){
+
+  hr{
+    display: none;
   }
 }
